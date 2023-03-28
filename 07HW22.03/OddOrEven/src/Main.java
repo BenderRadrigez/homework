@@ -4,19 +4,18 @@ public class Main {
     public static void main(String[] args) {
         int firstNum;
         int secondNum;
-        boolean oddOrEven;
+        boolean isOddOrEven;
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("пожалуйста дайте мне два числа для сложения:");
         firstNum = scanner.nextInt();
         secondNum = scanner.nextInt();
-        oddOrEven = isOdd(firstNum, secondNum);
-        System.out.println("число " + (oddOrEven ? "четное" : "Нечетное"));
+        isOddOrEven = isEven(firstNum, secondNum);
+        System.out.println("число " + (isOddOrEven ? "четное" : "нечетное"));
     }
 
-    static boolean isOdd(int numA, int numB){
-
+    static boolean isEven(int numA, int numB){
         return (numA + numB) % 2 == 0;
     }
 }
