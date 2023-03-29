@@ -9,12 +9,12 @@ public class Main {
         int secondNum;
         int result;
         int answer;
-        int score = 0;
+        int score;
         int continueGame;
         int randomChar;
         char[] operator = {'+', '-', '*', '/', '%'};
 
-        isStartMessage();
+        printStartMessage();
         scanner.nextLine();
 
         while(true){
@@ -40,7 +40,7 @@ public class Main {
             if (continueGame == 0) break;
         }
 
-        isFinalMessage(score);
+        printFinalMessage(score);
     }
 
     static int matematicOperation(int randomOperatorNumber, int num1, int num2){
@@ -51,7 +51,7 @@ public class Main {
         return num1 % num2;
     }
 
-    static void isStartMessage(){
+    static void printStartMessage(){
         System.out.println("Привет. я здесь, чтобы сыграть с тобой в игру...");
         System.out.println("Правила просты, я даю тебе математический пример('+,-,*,/,%') - ты отвечаешь.");
         System.out.println("Учти что результат деления нужно указать без остатка! только целое число(округление в меньшую сторону)!");
@@ -59,7 +59,7 @@ public class Main {
         System.out.println("нажми enter чтоб продолжить...");
     }
 
-    static void isFinalMessage(int score){
+    static void printFinalMessage(int score){
         if (score == 1) System.out.println("молодец, даже самый маленький успех - все равно успех! ты заработал " + score + " очко.)");
         else if (score >= 2 && score <= 4 ) System.out.println("молодец, даже самый маленький успех - все равно успех! ты заработал " + score + " очка.)");
         else System.out.println("молодец, даже самый маленький успех - все равно успех! ты заработал " + score + " очков.)");
