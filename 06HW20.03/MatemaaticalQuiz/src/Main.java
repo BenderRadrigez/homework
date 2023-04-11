@@ -84,7 +84,7 @@ public class Main {
 
     static void whoIsWin(String[] arrayNames, int[] arrayScores){
         String someString;
-        int someValue, index = 0;
+        int someValue, index;
 
         for(int i = 0; i < arrayScores.length; i++){
             index = i;
