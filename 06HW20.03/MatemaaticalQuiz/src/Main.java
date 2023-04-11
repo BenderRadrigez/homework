@@ -89,7 +89,7 @@ public class Main {
         for(int i = 0; i < arrayScores.length; i++){
             index = i;
             for (int j = i; j < arrayScores.length; j++){
-                if (arrayScores[j] > arrayScores[i]){
+                if (arrayScores[j] > arrayScores[i] && arrayScores[index] < arrayScores[j]){
                     index = j;
                 }
             }
