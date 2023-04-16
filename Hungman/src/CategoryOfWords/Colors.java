@@ -1,5 +1,9 @@
 package CategoryOfWords;
 
+import java.util.Random;
+
 public class Colors {
-    public static String[] words = {"красный", "оранжевый", "желтый", "зеленый", "синий", "голубой", "фиолетовый", "белый", "черный", "коричневый"};
+    String[] words = {"красный", "оранжевый", "желтый", "зеленый", "синий", "голубой", "фиолетовый", "белый", "черный",
+            "коричневый"};
+    public String word = words[new Random().nextInt(words.length)];
 }
